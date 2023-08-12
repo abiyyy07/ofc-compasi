@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #3D0000;
+}
+
+.navbar {
+    padding-top: 7px;
+    padding: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.nav-head a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-auth a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-auth-logout a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media (max-width: 800px) {
+    .nav-auth a {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-auth-logout a {
+        display: none;
+    }
+}
+
+.navbar-support {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    position: -webkit-sticky;
+    top: 0px;
+    position: sticky;
+}
+
+.navbar-support-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-support-items a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width:800px) {
+    .navbar-support{
+        display: none;
+    }
+}
+
+.hamburger {
+    display: none;
+    margin-top: -15px;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #3D0000;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.hamburger-items {
+    margin-left: 25px;
+}
+
+.hamburger-items-list {
+    margin-top: 10px;
+}
+
+.hamburger-items-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger-items-list-auth a {
+    color: gold;
+}
+
+.add-tugas {
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.add-tugas p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.add-tugas-link {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.add-tugas-link a {
+    text-decoration: none;
+    background-color: #3D0000;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+table {
+    margin: auto;
+    font-family: "Arial";
+    font-size: 12px;
+    padding-top: 10px;
+}
+.table {
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.table th, 
+.table td {
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 9px 21px;
+}
+.table th, 
+.table td:last-child {
+    border-right: 1px solid #cccccc;
+}
+.table td:first-child {
+    border-top: 1px solid #cccccc;
+}
+caption {
+    caption-side: top;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+ 
+/* Table Header */
+.table thead th {
+    background-color: #3D0000;
+    color: #FFFFFF;
+}
+ 
+/* Table Body */
+.table tbody td {
+    color: #353535;
+}
+.table tbody tr:nth-child(odd) td {
+    background-color: #f5fff9;
+}
+.table tbody tr:hover th,
+.table tbody tr:hover td {
+    background-color: #f0f0f0;
+    transition: all .2s;
+}
+ 
+/*Tabel Responsive 1*/
+.table-container {
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.list-tugas-edit-btn {
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.list-tugas-delete-btn {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.create-body {
+    position: relative;
+	width:100%;
+	height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-create {
+    align-items: center;
+    text-align: center;
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 7px;
+    border: #3D0000 1px solid;
+    border-radius: 5px;
+}
+
+.form-button-create {
+    border: none;
+    background-color: #3D0000;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.edit-body {
+    position: relative;
+	width:100%;
+	height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-edit {
+    align-items: center;
+    text-align: center;
+}
+
+.form-button-edit {
+    border: none;
+    background-color: #3D0000;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+}

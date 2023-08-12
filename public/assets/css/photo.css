@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: #3D0000;
+}
+
+.navbar {
+    padding-top: 7px;
+    padding: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.nav-head a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-auth a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-auth-logout a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media (max-width: 800px) {
+    .nav-auth a {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-auth-logout a {
+        display: none;
+    }
+}
+
+.navbar-support {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    position: -webkit-sticky;
+    top: 0px;
+    position: sticky;
+}
+
+.navbar-support-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-support-items a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width:800px) {
+    .navbar-support{
+        display: none;
+    }
+}
+
+.hamburger {
+    display: none;
+    margin-top: -15px;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #3D0000;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.hamburger-items {
+    margin-left: 25px;
+}
+
+.hamburger-items-list {
+    margin-top: 10px;
+}
+
+.hamburger-items-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger-items-list-auth a {
+    color: gold;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-photo-image img {
+    width: 100%;
+}
+
+.card-photo-image {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.modal-target:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+/* Add Animation */
+.modal-content, .modal-caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-atransform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.create-body {
+    position: relative;
+	width:100%;
+	height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-create {
+    align-items: center;
+    text-align: center;
+}
+
+.form-control {
+    width: 80%;
+    margin-bottom: 5px;
+    padding: 7px;
+    border: #3D0000 1px solid;
+    border-radius: 5px;
+}
+
+.form-button-create {
+    border: none;
+    background-color: #3D0000;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.form-group p {
+    text-align: left;
+    left: auto;
+    font-weight: bold;
+}

@@ -1,0 +1,500 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #d4d4d4;
+}
+
+nav {
+    background-color: #3D0000;
+    position: -webkit-sticky;
+    top: 0px;
+    position: sticky;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    position: -webkit-sticky;
+    top: 0px;
+    position: sticky;
+}
+
+.nav-logo {
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .navbar-header {
+        margin-right: 50px;
+    }
+}
+
+.hamburger {
+    display: none;
+    margin-top: -15px;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #3D0000;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.hamburger-items {
+    margin-left: 25px;
+}
+
+.hamburger-items-list {
+    margin-top: 10px;
+}
+
+.hamburger-items-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger-items-list-auth a {
+    color: gold;
+}
+
+.nav-side {
+    float: left;
+    left: auto;
+    display: block;
+    position: fixed;
+    background-color: #300000;
+    color: white;
+    width: 300px;
+    height: 100%;
+    border-top: white 1px solid;
+    border-right: white 1px solid;
+}
+
+@media (max-width: 800px) {
+    .nav-side {
+        display: none;
+    }
+}
+
+.nav-side-logo {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.nav-side-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    border-top: whitesmoke 1px solid;
+    border-bottom: whitesmoke 1px solid;
+}
+
+.nav-side-link a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-side-link-logout a {
+    padding-top: 25px;
+    color: gold;
+}
+
+.nav-side-link-admin {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    border-top: whitesmoke 1px solid;
+    border-bottom: whitesmoke 1px solid;
+}
+
+.nav-side-link-admin a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.dropdown-item {
+    margin-top: 25px;
+}
+
+.nav-side-footer {
+    position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;
+   text-align: center;
+}
+
+.nav-side-footer p {
+    margin-right: 10px;
+}
+
+.card-static {
+    position: relative;
+    margin-left: 300px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .card-static {
+        margin-left: auto!important;
+        overflow-x: scroll;
+    }
+}
+
+.card-static-content {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card-static-content-post {
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #1f0000;
+    color: white;
+    margin-right: 20px;
+}
+
+.card-static-content-gallery {
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #1f0000;
+    color: white;
+    margin-right: 20px;
+}
+
+.card-static-content-users {
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #1f0000;
+    color: white;
+    margin-right: 20px;
+}
+
+.card-static-content-achievements {
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #1f0000;
+    color: white;
+    margin-right: 20px;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 310px;
+    max-width: 800px;
+    margin-left: 315px;
+}
+
+@media (max-width:800px) {
+    .highcharts-figure,
+    .highcharts-data-table table {
+        margin-left: 0px;
+        min-width: none;
+        max-width: none;
+}
+}
+
+#container {
+    height: 400px;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+.card-finance {
+    margin-left: 310px;
+    margin-top: 5px;
+}
+
+@media (max-width:800px) {
+    .card-finance {
+        margin-left: 0%;
+    }
+}
+
+.card-header-finance {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.card-body-finance {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .card-body-finance {
+        justify-content: center;
+        text-align: center;
+        background-color: #300000;
+    }
+}
+
+@media (max-width:800px) {
+    .finance-recap-view {
+        margin-bottom: 10px;
+    }
+}
+
+.finance-recap-view {
+    padding: 10px;
+    margin-right: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #300000;
+    border-radius: 10px;
+}
+
+.finance-recap-view p {
+    margin-bottom: 5px;
+}
+
+.table-pemasukan {
+    margin-top: 10px;
+    background-color: #198754;
+}
+
+.table-pengeluaran {
+    margin-top: 10px;
+    background-color: red;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 77%;
+    margin-left: 310px;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+      margin-left: 0%;
+      width: 100%;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+.more-click-pemasukan {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 57%;
+}
+
+@media (max-width: 800px) {
+    .more-click-pemasukan {
+        margin-left: 0%;
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+    }
+}
+
+.more-click-pemasukan a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: #198754;
+    color: white;
+    border-radius: 10px;
+}
+
+.more-click-pengeluaran {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 57%;
+}
+
+@media (max-width: 800px) {
+    .more-click-pengeluaran {
+        margin-left: 0%;
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+    }
+}
+
+.more-click-pengeluaran a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+.admin-welcome {
+    margin-top: 5px;
+    margin-left: 310px;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .admin-welcome {
+        margin-left: 0%;
+        text-align: center;
+    }
+}
+
+.admin-welcome p {
+    font-size: 20px;
+}

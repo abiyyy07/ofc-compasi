@@ -1,0 +1,92 @@
+table {
+    margin: auto;
+    font-family: "Arial";
+    font-size: 12px;
+    padding-top: 10px;
+}
+.table {
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.table th, 
+.table td {
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 9px 21px;
+}
+.table th, 
+.table td:last-child {
+    border-right: 1px solid #cccccc;
+}
+.table td:first-child {
+    border-top: 1px solid #cccccc;
+}
+caption {
+    caption-side: top;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+ 
+/* Table Header */
+.table thead th {
+    background-color: #3D0000;
+    color: #FFFFFF;
+}
+ 
+/* Table Body */
+.table tbody td {
+    color: #353535;
+}
+.table tbody tr:nth-child(odd) td {
+    background-color: #f5fff9;
+}
+.table tbody tr:hover th,
+.table tbody tr:hover td {
+    background-color: #f0f0f0;
+    transition: all .2s;
+}
+ 
+/*Tabel Responsive 1*/
+.table-container {
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.list-gallery-edit-btn {
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.list-gallery-delete-btn {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.post-create {
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.post-create p {
+    font-weight: bold;
+}
+
+.post-create-body {
+    margin-top: 10px;
+}
+
+.post-create-body a {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    background-color: #3D0000;
+    padding: 5px;
+}
